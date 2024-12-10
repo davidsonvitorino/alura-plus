@@ -5,6 +5,7 @@
     --cor-fundo: #00030c;
     --cor-span: #ec2f46;
     --fonte-principal: 'Inter';
+    --botao-azul-efeito: #37b7f7;
 }
 
 * {
@@ -44,10 +45,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.container-botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-fundo);
+}
+
 .botao-secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
-    
+}
+
+.botao-secundario:hover {
+    border: none;
 }
 
 .container-aviso {
